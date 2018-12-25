@@ -11,12 +11,12 @@ module.exports = {
         "extensions": [".js", ".jsx"]
       }
     ],
-    "react/prop-types": 0,
+    // "react/prop-types": 0,
     "no-underscore-dangle": 0,
-    "import/imports-first": ["error", "absolute-first"],
-    "import/newline-after-import": "error",
-    "react/jsx-uses-react": "error",   
-    "react/jsx-uses-vars": "error",
+    // "import/imports-first": ["error", "absolute-first"],
+    // "import/newline-after-import": "error",
+    // "react/jsx-uses-react": "error",   
+    // "react/jsx-uses-vars": "error",
   },
   "globals": {
     "window": true,
@@ -27,6 +27,14 @@ module.exports = {
     "Blob": true,
     "navigator": true
   },
-  "parserOptions": { "sourceType": "module" },
+  // "parserOptions": { "sourceType": "module" },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    }
+  },
   "parser": "babel-eslint"
 };
