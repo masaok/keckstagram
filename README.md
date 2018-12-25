@@ -1,2 +1,2 @@
 # keckstagram
-Instragram Clone
+Instagram Clone
